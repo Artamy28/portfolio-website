@@ -1,0 +1,344 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, minimum-scale=1"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+			integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link id="darkmodeToggle" rel="stylesheet" href="styles_lightmode.css" />
+		<title>Portfolio</title>
+
+		<!-- Preload -->
+		<link
+			id="table"
+			rel="preload"
+			as="image"
+			href="images/table-lamp-books.svg"
+		/>
+		<link
+			id="table-light"
+			rel="preload"
+			as="image"
+			href="images/table-lamp-books-light.svg"
+		/>
+	</head>
+	<body onload="checkDarkmode()">
+		<div class="main-grid">
+			<!-- Navbar -->
+			<nav class="navbar">
+				<div class="name"><a href="#scroll-home">victor ung</a></div>
+				<div class="nav-links">
+					<div class="nav-link"><a href="#scroll-about">about</a></div>
+					<div class="nav-link"><a href="#scroll-projects">projects</a></div>
+					<div class="nav-link">
+						<a href="#scroll-reveal-contact">contact</a>
+					</div>
+					<button onclick="darkmodeToggle()">Dark Mode</button>
+				</div>
+			</nav>
+
+			<div class="navbar-background">
+				<div class="section1"></div>
+				<div class="section2"></div>
+				<div class="section3"></div>
+			</div>
+
+			<!-- Home -->
+
+			<section class="home" id="scroll-home">
+				<img
+					id="table"
+					src="images/table-lamp-books.svg"
+					alt="table-lamp-book"
+				/>
+
+				<img
+					id="table-light"
+					src="images/table-lamp-books-light.svg"
+					alt="table-lamp-book"
+				/>
+				<div class="home-left"></div>
+				<div class="home-right">
+					<h1 class="abs-name">victor ung</h1>
+					<div class="greeting">
+						<h1>Hello I'm Victor 👋</h1>
+						<br />
+						<p>
+							I'm a Software Engineer and a TFT enthusiast with a passion for
+							technology.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- About -->
+			<section class="about" id="scroll-about">
+				<div class="about-left">
+					<div class="about-me">
+						<h2>About me</h2>
+						<p>
+							I'm a Software Developer who's been building applications since my
+							first year in university. Since then, I interned at a few
+							companies and am constantly looking to learn new front-end and
+							back-end technologies.
+							<br /><br />
+							Aside from coding, ...
+						</p>
+					</div>
+				</div>
+				<div class="about-right">
+					<div class="technologies">
+						<h2>Technologies</h2>
+						<div class="tech-grid">
+							<div class="tech">
+								<div class="img-container">
+									<img src="icons\html5.png" alt="html5 icon" />
+								</div>
+								<p>HTML</p>
+							</div>
+							<div class="tech">
+								<div class="img-container">
+									<img src="icons/css3.png" alt="css3 icon" />
+								</div>
+								<p>CSS</p>
+							</div>
+							<div class="tech">
+								<div class="img-container">
+									<img src="icons/sass.svg.png" alt="sass icon" />
+								</div>
+								<p>SCSS</p>
+							</div>
+							<div class="tech">
+								<div class="img-container">
+									<img src="icons/js.png" alt="js icon" />
+								</div>
+								<p>JS</p>
+							</div>
+							<div class="tech">
+								<div class="img-container">
+									<img src="icons/ts.png" alt="ts icon" />
+								</div>
+								<p>TS</p>
+							</div>
+							<div class="tech">
+								<div class="img-container">
+									<img src="icons/react.svg" alt="react icon" />
+								</div>
+								<p>React</p>
+							</div>
+							<div class="tech">
+								<div class="img-container"><img src="" alt="" /></div>
+								<p>NodeJS</p>
+							</div>
+							<div class="tech">
+								<div class="img-container"><img src="" alt="" /></div>
+								<p>Express</p>
+							</div>
+							<div class="tech">
+								<div class="img-container"><img src="" alt="" /></div>
+								<p>MongoDB</p>
+							</div>
+							<div class="tech">
+								<div class="img-container"><img src="" alt="" /></div>
+								<p>MySQL</p>
+							</div>
+							<div class="tech">
+								<div class="img-container"><img src="" alt="" /></div>
+								<p>Postgre</p>
+							</div>
+							<div class="tech">
+								<div class="img-container"><img src="" alt="" /></div>
+								<p>Python</p>
+							</div>
+							<div class="tech">
+								<div class="img-container"><img src="" alt="" /></div>
+								<p>Linux</p>
+							</div>
+							<div class="tech">
+								<div class="img-container"><img src="" alt="" /></div>
+								<p>Git</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Projects -->
+			<section class="projects" id="scroll-projects">
+				<article class="project">
+					<img
+						class="project-img"
+						src="https://picsum.photos/1920/1080?random=1"
+						alt="project-photo-1"
+					/>
+
+					<div class="video-wrapper hide" id="vid1">
+						<video src="/videos/flower.webm" type="video/webm" controls></video>
+
+						<div
+							class="close-button"
+							onclick="closeVideo1()"
+							style="cursor: pointer"
+						>
+							<img src="/images/close-button.png" alt="closebutton" />
+						</div>
+					</div>
+
+					<div class="project-links">
+						<div class="link" onclick="openVideo1()" style="cursor: pointer">
+							<span>See a demo</span> <i class="fa-solid fa-video"></i>
+						</div>
+						<div class="link">
+							<a href="">Visit the website</a> <i class="fa-solid fa-link"></i>
+						</div>
+						<div class="link">
+							<a href="">See the code</a> <i class="fa-brands fa-github"></i>
+						</div>
+					</div>
+					<div class="project-description">
+						<h2>Project Title</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+							molestie tortor felis, sed congue leo pharetra non. Lorem ipsum
+							dolor sit amet, consectetur adipiscing elit. Nulla molestie tortor
+							felis, sed congue leo pharetra non.
+						</p>
+						<h2>Technologies used:</h2>
+						<p class="techs">HTML, CSS, SCSS, TypeScript, NodeJS</p>
+					</div>
+				</article>
+
+				<article class="project">
+					<img
+						class="project-img"
+						src="https://picsum.photos/1920/1080?random=2"
+						alt="project-photo-2"
+					/>
+
+					<div class="video-wrapper hide" id="vid2">
+						<video src="/videos/flower.webm" type="video/webm" controls></video>
+
+						<div
+							class="close-button"
+							onclick="closeVideo2()"
+							style="cursor: pointer"
+						>
+							<img src="/images/close-button.png" alt="closebutton" />
+						</div>
+					</div>
+
+					<div class="project-links">
+						<div class="link" onclick="openVideo2()" style="cursor: pointer">
+							<span>See a demo</span> <i class="fa-solid fa-video"></i>
+						</div>
+						<div class="link">
+							<a href="">Visit the website</a> <i class="fa-solid fa-link"></i>
+						</div>
+						<div class="link">
+							<a href="">See the code</a> <i class="fa-brands fa-github"></i>
+						</div>
+					</div>
+					<div class="project-description">
+						<h2>Project Title</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+							molestie tortor felis, sed congue leo pharetra non. Lorem ipsum
+							dolor sit amet, consectetur adipiscing elit. Nulla molestie tortor
+							felis, sed congue leo pharetra non.
+						</p>
+						<h2>Technologies used:</h2>
+						<p class="techs">HTML, CSS, SCSS, TypeScript, NodeJS</p>
+					</div>
+				</article>
+
+				<article class="project">
+					<img
+						class="project-img"
+						src="https://picsum.photos/1920/1080?random=3"
+						alt="project-photo-3"
+					/>
+
+					<div class="video-wrapper hide" id="vid3">
+						<video src="/videos/flower.webm" type="video/webm" controls></video>
+
+						<div
+							class="close-button"
+							onclick="closeVideo3()"
+							style="cursor: pointer"
+						>
+							<img src="/images/close-button.png" alt="closebutton" />
+						</div>
+					</div>
+
+					<div class="project-links">
+						<div class="link" onclick="openVideo3()" style="cursor: pointer">
+							<span>See a demo</span> <i class="fa-solid fa-video"></i>
+						</div>
+						<div class="link">
+							<a href="">Visit the website</a> <i class="fa-solid fa-link"></i>
+						</div>
+						<div class="link">
+							<a href="">See the code</a> <i class="fa-brands fa-github"></i>
+						</div>
+					</div>
+					<div class="project-description">
+						<h2>Project Title</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+							molestie tortor felis, sed congue leo pharetra non. Lorem ipsum
+							dolor sit amet, consectetur adipiscing elit. Nulla molestie tortor
+							felis, sed congue leo pharetra non.
+						</p>
+						<h2>Technologies used:</h2>
+						<p class="techs">HTML, CSS, SCSS, TypeScript, NodeJS</p>
+					</div>
+				</article>
+			</section>
+
+			<div class="reveal-contact" id="scroll-reveal-contact">
+				<h1>Reveal Contact</h1>
+			</div>
+			<!-- Contact -->
+			<section class="contact" id="scroll-contact">
+				<div class="contact-left">
+					<div class="contact-info">
+						<h2>Reach out to me! 👋</h2>
+						<p>
+							e-mail... phone number...Lorem ipsum dolor sit amet, consectetur
+							adipiscing elit. Nulla molestie tortor felis, sed congue leo
+							pharetra non. Lorem ipsum dolor sit amet, consectetur adipiscing
+							elit. Nulla molestie tortor felis, sed congue leo pharetra non.
+						</p>
+						<br /><br />
+						<p>Some socials...</p>
+					</div>
+				</div>
+				<div class="contact-right">
+					<form class="contact-form" action="">
+						<input class="name" type="text" placeholder="Name" />
+						<input class="email" type="text" placeholder="E-mail" />
+						<textarea
+							class="message"
+							name="contact-message"
+							placeholder="Message"
+						></textarea>
+						<input class="send" type="submit" value="SEND" />
+					</form>
+				</div>
+				<footer class="footer">
+					<p>Thanks for viewing my portfolio!</p>
+					<p>Victor Ung.</p>
+				</footer>
+			</section>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
