@@ -11,15 +11,15 @@ const darkmodeToggle = () => {
 	let select2 = document.querySelector(".nav-links button");
 
 	// if lightmode on, toggle into darkmode
-	if (select.href.includes("styles_lightmode.css")) {
-		select.setAttribute("href", "styles_darkmode.css");
+	if (select.href.includes("/css/styles_lightmode.css")) {
+		select.setAttribute("href", "./css/styles_darkmode.css");
 		select2.innerHTML = "Light Mode";
 		// save darkmode status into local storage
 		localStorage.setItem("isDarkMode", "1");
 	}
 	// if darkmode on, toggle into lightmode
-	else if (select.href.includes("styles_darkmode.css")) {
-		select.setAttribute("href", "styles_lightmode.css");
+	else if (select.href.includes("/css/styles_darkmode.css")) {
+		select.setAttribute("href", "./css/styles_lightmode.css");
 		select2.innerHTML = "Dark Mode";
 		// save darkmode status into local storage
 		localStorage.setItem("isDarkMode", "0");

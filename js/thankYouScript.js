@@ -9,14 +9,14 @@ const darkmodeToggle = () => {
 	let select = document.getElementById("darkmodeToggle");
 
 	// if lightmode on, toggle into darkmode
-	if (select.href.includes("thankYou_styles_light.css")) {
-		select.setAttribute("href", "thankYou_styles_dark.css");
+	if (select.href.includes("/css/thankYou_styles_light.css")) {
+		select.setAttribute("href", "./css/thankYou_styles_dark.css");
 		// save darkmode status into local storage
 		localStorage.setItem("isDarkMode", "1");
 	}
 	// if darkmode on, toggle into lightmode
-	else if (select.href.includes("thankYou_styles_dark.css")) {
-		select.setAttribute("href", "thankYou_styles_light.css");
+	else if (select.href.includes("/css/thankYou_styles_dark.css")) {
+		select.setAttribute("href", "./css/thankYou_styles_light.css");
 		// save darkmode status into local storage
 		localStorage.setItem("isDarkMode", "0");
 	}

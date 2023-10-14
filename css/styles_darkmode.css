@@ -13,31 +13,31 @@ Then margin left and right: 15vw*/
 
 @font-face {
 	font-family: "Mosk";
-	src: url(fonts/mosk_typeface/Mosk\ Normal_400.ttf) format("truetype");
+	src: url(../fonts/mosk_typeface/Mosk\ Normal_400.ttf) format("truetype");
 	font-weight: normal;
 }
 
 @font-face {
 	font-family: "Mosk";
-	src: url(fonts/mosk_typeface/Mosk\ Medium\ 500.ttf) format("truetype");
+	src: url(../fonts/mosk_typeface/Mosk\ Medium\ 500.ttf) format("truetype");
 	font-weight: 500;
 }
 
 @font-face {
 	font-family: "Mosk";
-	src: url(fonts/mosk_typeface/Mosk\ Semi-Bold\ 600.ttf) format("truetype");
+	src: url(../fonts/mosk_typeface/Mosk\ Semi-Bold\ 600.ttf) format("truetype");
 	font-weight: 600;
 }
 
 @font-face {
 	font-family: "Mosk";
-	src: url(fonts/mosk_typeface/Mosk\ Bold\ 700.ttf) format("truetype");
+	src: url(../fonts/mosk_typeface/Mosk\ Bold\ 700.ttf) format("truetype");
 	font-weight: 700;
 }
 
 @font-face {
 	font-family: "Mosk";
-	src: url(fonts/mosk_typeface/Mosk\ Extra-Bold\ 800.ttf) format("truetype");
+	src: url(../fonts/mosk_typeface/Mosk\ Extra-Bold\ 800.ttf) format("truetype");
 	font-weight: 800;
 }
 
@@ -149,8 +149,8 @@ img {
 
 .nav-links button:hover {
 	cursor: pointer;
-	background-color: rgb(219, 219, 219);
-	color: rgb(58, 58, 58);
+	background-color: rgb(58, 58, 58);
+	color: rgb(219, 219, 219);
 }
 
 .home-left {

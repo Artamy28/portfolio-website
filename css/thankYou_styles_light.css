@@ -6,25 +6,25 @@
 
 @font-face {
 	font-family: "Mosk";
-	src: url(fonts/mosk_typeface/Mosk\ Normal_400.ttf) format("truetype");
+	src: url(../fonts/mosk_typeface/Mosk\ Normal_400.ttf) format("truetype");
 	font-weight: normal;
 }
 
 @font-face {
 	font-family: "Mosk";
-	src: url(fonts/mosk_typeface/Mosk\ Semi-Bold\ 600.ttf) format("truetype");
+	src: url(../fonts/mosk_typeface/Mosk\ Semi-Bold\ 600.ttf) format("truetype");
 	font-weight: 600;
 }
 
 @font-face {
 	font-family: "Mosk";
-	src: url(fonts/mosk_typeface/Mosk\ Bold\ 700.ttf) format("truetype");
+	src: url(../fonts/mosk_typeface/Mosk\ Bold\ 700.ttf) format("truetype");
 	font-weight: 700;
 }
 
 @font-face {
 	font-family: "Mosk";
-	src: url(fonts/mosk_typeface/Mosk\ Extra-Bold\ 800.ttf) format("truetype");
+	src: url(../fonts/mosk_typeface/Mosk\ Extra-Bold\ 800.ttf) format("truetype");
 	font-weight: 800;
 }
 
@@ -35,14 +35,14 @@ html {
 }
 
 body {
-	background-color: #2b3467;
+	background-color: #75c2f6;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
 .container {
-	background-color: 272727;
+	background-color: white;
 	width: 70%;
 	height: 60%;
 	border: 1px solid black;
@@ -52,21 +52,19 @@ body {
 	font-size: 4rem;
 	margin-top: 5vh;
 	margin-left: 5vw;
-	margin-right: 5vw;
-	color: rgb(219, 219, 219);
 }
 
 .container a {
 	display: inline-block;
-	margin-top: 4vh;
+	margin-top: 2vh;
 	margin-left: 5vw;
 	text-decoration: none;
 	border: 1px solid rgb(58, 58, 58);
 	border-radius: 10px;
-	padding: 1rem;
+	padding: 1%;
 	color: rgb(58, 58, 58);
 	font-weight: 700;
-	font-size: 1rem;
+	font-size: 0.827vw;
 	background-color: rgb(219, 219, 219);
 	cursor: pointer;
 }
