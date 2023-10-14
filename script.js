@@ -61,6 +61,11 @@ const closeVideo3 = () => {
 	select.classList.add("hide");
 };
 
+const formSubmit = (e) => {
+	alert("form submit");
+	console.log(e.target.elements);
+};
+
 // the navbar is usually solid
 // make the navbar opaque in between page sections, when there is nothing behind
 // this makes it so the navbar color transitions smoothly

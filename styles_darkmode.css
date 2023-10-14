@@ -51,6 +51,12 @@ html {
 	color: rgb(39, 39, 39);
 }
 
+html,
+body {
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
 .main-grid {
 	display: grid;
 	grid-template-rows: 100vh 100vh auto;
@@ -79,15 +85,15 @@ img {
 }
 
 #table {
+	display: none;
+}
+
+#table-light {
 	position: absolute;
 	width: 35vw;
 	top: 20vh;
 	left: 13vw;
 	height: auto;
-}
-
-#table-light {
-	display: none;
 }
 
 .navbar {
@@ -290,6 +296,7 @@ img {
 	border: 4px solid rgb(58, 58, 58);
 }
 
+.project .video-wrapper iframe,
 .project .video-wrapper video {
 	position: absolute;
 	width: 100%;
@@ -444,6 +451,7 @@ img {
 	flex-basis: 10%;
 	font-weight: 700;
 	color: rgb(58, 58, 58);
+	cursor: pointer;
 }
 
 .footer {
@@ -673,7 +681,7 @@ img {
 			"alias-projects";
 	}
 
-	#table {
+	#table-light {
 		position: absolute;
 		width: 35vw;
 		top: 30vh;
@@ -855,7 +863,7 @@ img {
 			"alias-projects";
 	}
 
-	#table {
+	#table-light {
 		display: none;
 	}
 

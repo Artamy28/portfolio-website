@@ -51,6 +51,12 @@ html {
 	color: rgb(39, 39, 39);
 }
 
+html,
+body {
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
 .main-grid {
 	display: grid;
 	grid-template-rows: 100vh 100vh auto;
@@ -444,6 +450,7 @@ img {
 	flex-basis: 10%;
 	font-weight: 700;
 	color: rgb(58, 58, 58);
+	cursor: pointer;
 }
 
 .footer {

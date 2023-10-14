@@ -180,7 +180,11 @@
 					/>
 
 					<div class="video-wrapper hide" id="vid1">
-						<video src="/videos/flower.webm" type="video/webm" controls></video>
+						<!-- <video src="/videos/flower.webm" type="video/webm" controls></video> -->
+						<!-- <iframe
+							src="https://www.youtube.com/embed/a3ICNMQW7Ok?controls=1&autoplay=0&mute=1"
+						>
+						</iframe> -->
 
 						<div
 							class="close-button"
@@ -321,13 +325,42 @@
 					</div>
 				</div>
 				<div class="contact-right">
-					<form class="contact-form" action="">
-						<input class="name" type="text" placeholder="Name" />
-						<input class="email" type="text" placeholder="E-mail" />
+					<form
+						class="contact-form"
+						action="https://formsubmit.co/ung.vrj@gmail.com"
+						method="POST"
+					>
+						<input
+							type="hidden"
+							name="_next"
+							value="http://127.0.0.1:5501/thankYou.html"
+						/>
+						<input
+							type="hidden"
+							name="_subject"
+							value="Portfolio new e-mail!"
+						/>
+						<input type="hidden" name="_captcha" value="false" />
+						<input
+							class="name"
+							type="text"
+							name="name"
+							placeholder="Name"
+							required
+						/>
+						<input
+							class="email"
+							type="email"
+							name="email"
+							placeholder="E-mail Address"
+							required
+						/>
 						<textarea
 							class="message"
-							name="contact-message"
+							type="text"
+							name="message"
 							placeholder="Message"
+							required
 						></textarea>
 						<input class="send" type="submit" value="SEND" />
 					</form>
