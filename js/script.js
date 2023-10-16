@@ -33,7 +33,7 @@ const darkmodeToggle = () => {
 // Toggling videos on/off
 const openVideo1 = () => {
 	let select = document.getElementById("vid1");
-	select.classList.toggle("hide");
+	select.classList.remove("hide");
 };
 
 const closeVideo1 = () => {
@@ -43,7 +43,7 @@ const closeVideo1 = () => {
 
 const openVideo2 = () => {
 	let select = document.getElementById("vid2");
-	select.classList.toggle("hide");
+	select.classList.remove("hide");
 };
 
 const closeVideo2 = () => {
@@ -53,7 +53,7 @@ const closeVideo2 = () => {
 
 const openVideo3 = () => {
 	let select = document.getElementById("vid3");
-	select.classList.toggle("hide");
+	select.classList.remove("hide");
 };
 
 const closeVideo3 = () => {
