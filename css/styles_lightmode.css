@@ -211,6 +211,7 @@ img {
 
 .about-me p {
 	font-size: 1.55vw;
+	line-height: 1.4;
 }
 
 .about-right {
@@ -358,11 +359,32 @@ img {
 .project .project-description h2 {
 	font-size: 2.067vw;
 	font-weight: 800;
+	margin-bottom: 0.5rem;
+}
+
+.project .project-description h3 {
+	font-size: 1.8vw;
+	font-weight: 700;
+	margin-bottom: 0.5rem;
 }
 
 .project .project-description p {
 	font-size: 1.24vw;
 	margin-bottom: 20px;
+	line-height: 1.3;
+}
+
+.techs span {
+	display: inline-block;
+	border: 1px solid #272727;
+	padding: 0.4vw;
+	margin-top: 0.7rem;
+	margin-right: 0.3rem;
+}
+
+.techs span {
+	background-color: #272727;
+	color: rgb(219, 219, 219);
 }
 
 /* -------------------------- */
@@ -390,16 +412,42 @@ img {
 	flex-direction: column;
 }
 
-.contact-info {
+.contact-info a {
+	color: #272727;
 }
 
 .contact-info h2 {
 	font-size: 2.067vw;
 	font-weight: 800;
+	margin-bottom: 1vw;
 }
 
 .contact-info p {
 	font-size: 1.24vw;
+	line-height: 1.3;
+}
+
+.socials div {
+	display: inline-block;
+	width: 2vw;
+	height: 2vw;
+	margin-right: 1vw;
+}
+
+.socials img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.socials img {
+	-webkit-filter: invert(10%); /* Safari/Chrome */
+	filter: invert(10%);
+}
+
+.socials img:hover {
+	-webkit-filter: invert(50%); /* Safari/Chrome */
+	filter: invert(50%);
 }
 
 .contact-right {
@@ -592,6 +640,11 @@ img {
 		margin: 20vh 0vw 10vh 10vw;
 	}
 
+	.socials div {
+		width: 2.5vw;
+		height: 2.5vw;
+	}
+
 	.contact-right {
 		margin: 20vh 10vw 10vh 0vw;
 	}
@@ -636,6 +689,10 @@ img {
 
 	.project .project-description h2 {
 		font-size: 2.6vw;
+	}
+
+	.project .project-description h3 {
+		font-size: 2.2vw;
 	}
 
 	.project .project-description p {
@@ -809,6 +866,11 @@ img {
 	.project .project-description h2 {
 		font-size: 3.5vw;
 		font-weight: 800;
+	}
+
+	.project .project-description h3 {
+		font-size: 3vw;
+		font-weight: 700;
 	}
 
 	.project .project-description p {
@@ -1001,6 +1063,11 @@ img {
 		font-weight: 800;
 	}
 
+	.project .project-description h3 {
+		font-size: 4vw;
+		font-weight: 700;
+	}
+
 	.project .project-description p {
 		font-size: 3vw;
 		margin-bottom: 20px;
@@ -1013,6 +1080,11 @@ img {
 
 	.contact-info p {
 		font-size: 2vw;
+	}
+
+	.socials div {
+		width: 3vw;
+		height: 3vw;
 	}
 
 	.contact-form .name {
@@ -1131,6 +1203,11 @@ img {
 		font-weight: 800;
 	}
 
+	.project .project-description h3 {
+		font-size: 6.5vw;
+		font-weight: 700;
+	}
+
 	.project .project-description p {
 		font-size: 5vw;
 		margin-bottom: 20px;
@@ -1143,6 +1220,11 @@ img {
 
 	.contact-info p {
 		font-size: 4vw;
+	}
+
+	.socials div {
+		width: 5vw;
+		height: 5vw;
 	}
 
 	.nav-link {
