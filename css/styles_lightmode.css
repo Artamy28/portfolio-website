@@ -134,6 +134,10 @@ img {
 	font-weight: 800;
 }
 
+.nav-link a:hover {
+	color: rgb(68, 56, 240);
+}
+
 .nav-links button {
 	margin: 30px;
 	height: 4.7vh;
@@ -368,6 +372,15 @@ img {
 	margin-right: 5px;
 }
 
+.project .project-links .link:hover > a,
+.project .project-links .link:hover > span {
+	color: rgb(68, 56, 240);
+}
+
+.project .project-links .link:hover {
+	color: rgb(68, 56, 240);
+}
+
 .project .project-links .link i {
 	margin-right: 20px;
 }
@@ -520,6 +533,10 @@ img {
 	font-weight: 700;
 	color: rgb(58, 58, 58);
 	cursor: pointer;
+}
+
+.contact-form .send:hover {
+	background-color: #d1d1d1;
 }
 
 .footer {
