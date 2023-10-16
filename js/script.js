@@ -61,6 +61,16 @@ const closeVideo3 = () => {
 	select.classList.add("hide");
 };
 
+const openVideo4 = () => {
+	let select = document.getElementById("vid4");
+	select.classList.remove("hide");
+};
+
+const closeVideo4 = () => {
+	let select = document.getElementById("vid4");
+	select.classList.add("hide");
+};
+
 const formSubmit = (e) => {
 	alert("form submit");
 	console.log(e.target.elements);

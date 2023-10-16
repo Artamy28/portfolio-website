@@ -324,6 +324,27 @@ img {
 	opacity: 1;
 }
 
+.project .video-wrapper > .close-button-white {
+	position: absolute;
+	top: 12;
+	right: 12;
+	width: 2rem;
+	height: 2rem;
+	object-fit: contain;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s, opacity 0.5s linear;
+
+	-webkit-filter: invert(80%); /* Safari/Chrome */
+	filter: invert(80%);
+}
+
+/* Show "close video button" on hover */
+.project .video-wrapper:hover > .close-button-white {
+	visibility: visible;
+	opacity: 1;
+}
+
 .project .video-wrapper video:paused {
 	top: 50;
 	left: 50;
